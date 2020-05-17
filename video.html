@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drawings Relay Race</title>
+
+	<!-- bootstrap -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+	<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/main.css?v2">
+
+
+
+</head>
+<body>
+	<div class="containerd">
+		<div class="box">
+			<div class="title_wrap wrap_height">
+				<div class="title_inner">
+					<div class="title_h1">
+						<h1 class="text_rotate">DRAWINGS RELAY RACE</h1>
+					</div>
+					<div class="title_info">
+						<a href="index.html">HOME</a>
+						<a href="video.html">VIDEO</a>
+						<a href="">POSTER</a>
+						<p class="title_date">2020/05/10</p>
+					</div>
+				</div>
+				
+			</div>
+			<div class="video_wrap">
+				<div class="video_size">
+					<div class='embed-container'>
+						<iframe src='https://www.youtube.com/embed//Fomdm49Ow00' frameborder='0' allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="id_wrap wrap_height">
+				<div class="text_rotate">
+					<a target="_blank" href="https://twitter.com/SY06940425">@SY06940425</a>
+					<a target="_blank" href="https://twitter.com/Sininen">@Sininen</a>
+					<a target="_blank" href="http://twitter.com/cherrycat77">@cherrycat77</a>
+					<a target="_blank" href="https://twitter.com/Sashimi_Yao">@Sashimi_Yao</a>
+					<a target="_blank" href="https://twitter.com/1127Maker">@1127Maker</a>
+					<a target="_blank" href="https://twitter.com/maker_300">@maker_300</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			//initialize swiper when document ready
+			var mySwiper = new Swiper ('.swiper-container', {
+				// Optional parameters
+				direction: 'horizontal',
+				// loop: true,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				},
+			})
+			$('.swiper-button-prev').click(function(){console.log('click')});
+			$('.swiper-button-next').click(function(){console.log('next')});
+		});
+	</script>
+</body>
+</html>
