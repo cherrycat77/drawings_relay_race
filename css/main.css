@@ -19,6 +19,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #333;
 }
 
 a:hover {
@@ -193,7 +194,7 @@ a:visited {
 
   .title_wrap {
     width: 100%;
-    padding: 50px;
+    padding: 50px 30px;
   }
 
   .images_wrap {
@@ -204,7 +205,7 @@ a:visited {
   }
   .images_wrap .swiper-container img {
     height: auto;
-    width: calc(100% - 100px);
+    width: calc(100% - 60px);
   }
 
   .swiper-container-horizontal > .swiper-pagination-bullets,
@@ -218,7 +219,7 @@ a:visited {
 
   .id_wrap {
     width: 100%;
-    padding: 0 50px;
+    padding: 0 30px;
   }
   .id_wrap .text_rotate {
     width: 100%;
